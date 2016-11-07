@@ -1,0 +1,3 @@
+target 'FMDBManager' do
+    pod 'FMDB'
+end
