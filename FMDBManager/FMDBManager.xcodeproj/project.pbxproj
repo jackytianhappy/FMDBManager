@@ -15,6 +15,8 @@
 		858456A91DD087FD00CEB07A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858456A71DD087FD00CEB07A /* LaunchScreen.storyboard */; };
 		858456B41DD087FE00CEB07A /* FMDBManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858456B31DD087FE00CEB07A /* FMDBManagerTests.m */; };
 		858456BF1DD087FE00CEB07A /* FMDBManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858456BE1DD087FE00CEB07A /* FMDBManagerUITests.m */; };
+		858456D21DD089B100CEB07A /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 858456CF1DD089B100CEB07A /* FMDBManager.m */; };
+		858456D31DD089B100CEB07A /* FMDBCreateTableSqlSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 858456D11DD089B100CEB07A /* FMDBCreateTableSqlSet.m */; };
 		ECEFBB01BF5D96F01CFAA24C /* libPods-FMDBManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C0AEE98C8D405333FB10E1 /* libPods-FMDBManager.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,10 @@
 		858456BA1DD087FE00CEB07A /* FMDBManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDBManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		858456BE1DD087FE00CEB07A /* FMDBManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManagerUITests.m; sourceTree = "<group>"; };
 		858456C01DD087FE00CEB07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858456CE1DD089B100CEB07A /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		858456CF1DD089B100CEB07A /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		858456D01DD089B100CEB07A /* FMDBCreateTableSqlSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBCreateTableSqlSet.h; sourceTree = "<group>"; };
+		858456D11DD089B100CEB07A /* FMDBCreateTableSqlSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBCreateTableSqlSet.m; sourceTree = "<group>"; };
 		BD6A70E19434C65DCB2474A9 /* Pods-FMDBManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBManager/Pods-FMDBManager.release.xcconfig"; sourceTree = "<group>"; };
 		D7BDD1B917463D424EF6D386 /* Pods-FMDBManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBManager/Pods-FMDBManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +174,18 @@
 		858456CC1DD0880D00CEB07A /* FMDBManager */ = {
 			isa = PBXGroup;
 			children = (
+				858456CD1DD0899300CEB07A /* FMDBManager */,
+			);
+			path = FMDBManager;
+			sourceTree = "<group>";
+		};
+		858456CD1DD0899300CEB07A /* FMDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				858456CE1DD089B100CEB07A /* FMDBManager.h */,
+				858456CF1DD089B100CEB07A /* FMDBManager.m */,
+				858456D01DD089B100CEB07A /* FMDBCreateTableSqlSet.h */,
+				858456D11DD089B100CEB07A /* FMDBCreateTableSqlSet.m */,
 			);
 			path = FMDBManager;
 			sourceTree = "<group>";
@@ -359,8 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858456D21DD089B100CEB07A /* FMDBManager.m in Sources */,
 				858456A11DD087FD00CEB07A /* ViewController.m in Sources */,
 				8584569E1DD087FD00CEB07A /* AppDelegate.m in Sources */,
+				858456D31DD089B100CEB07A /* FMDBCreateTableSqlSet.m in Sources */,
 				8584569B1DD087FD00CEB07A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +619,7 @@
 				858456C51DD087FE00CEB07A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		858456C61DD087FE00CEB07A /* Build configuration list for PBXNativeTarget "FMDBManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +628,7 @@
 				858456C81DD087FE00CEB07A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		858456C91DD087FE00CEB07A /* Build configuration list for PBXNativeTarget "FMDBManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +637,7 @@
 				858456CB1DD087FE00CEB07A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
